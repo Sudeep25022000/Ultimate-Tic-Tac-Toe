@@ -30,121 +30,7 @@ void Console(){
         }
         cout << "\n\t\t\t\t\t\t\t |----|-----|-----|";
     }
-    cout << "\n\n\n\n";
-}
-
-
-
-
-/*The position where the required symbols are to be inputed. */
-void InputFields(){
-  int InputField; /*Accepts the numeric position of the Element. */
-
-  if(PlayerChoise == 'X')
-  cout << "Player" << CurrentPlayer << "'s turn. \nEnter the block number: ";
-
-  else if(PlayerChoise == 'O')
-  cout << "Player" << CurrentPlayer << "'s turn. \nEnter the block number: ";
-
-  cin >> InputField;
-
-  if(InputField == 1)
-    {
-      if (PositionalMatrix[0][0] == '1') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If TRUE, the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 2)
-    {
-      if (PositionalMatrix[0][0] == '2') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 3)
-    {
-      if (PositionalMatrix[0][0] == '3') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 4)
-    {
-      if (PositionalMatrix[0][0] == '4') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 5)
-    {
-      if (PositionalMatrix[0][0] == '5') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 6)
-    {
-      if (PositionalMatrix[0][0] == '6') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 7)
-    {
-      if (PositionalMatrix[0][0] == '7') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 8)
-    {
-      if (PositionalMatrix[0][0] == '8') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-    else if(InputField == 9)
-    {
-      if (PositionalMatrix[0][0] == '9') /*Compairing the matrix positional content with the numeric character value. */
-          PositionalMatrix[0][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
-      else{
-        cout << "Matrix field already in use. Try again!!" << endl;
-        InputFields(); //Recursive method to recall the method to input the fields.
-      }
-    }
-
-}
-
-
-
-/*How's the player gonna win? */
-void WinLogic(){
-
+    cout << "\n\n\n\n";    
 }
 
 
@@ -162,6 +48,121 @@ void SwitchPlayer(){
     CurrentPlayer = 1; //Current Player switches from 2 to 1.
   }      
 }
+
+
+
+
+/*The position where the required symbols are to be inputed. */
+void InputFields(){
+  int InputField; /*Accepts the numeric position of the Element. */
+
+  if(PlayerChoise == 'X')
+  cout << "\n\n\n\t Player" << CurrentPlayer << "'s turn!! \n\n\t Enter the block number: ";
+
+  else if(PlayerChoise == 'O')
+  cout << "\n\n\n\t Player" << CurrentPlayer << "'s turn!! \n\n\t Enter the block number: ";
+
+  cin >> InputField;
+
+  if(InputField == 1)
+    {
+      if (PositionalMatrix[0][0] == '1') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[0][0] = PlayerChoise; /*If TRUE, the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 2)
+    {
+      if (PositionalMatrix[0][1] == '2') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[0][1] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 3)
+    {
+      if (PositionalMatrix[0][2] == '3') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[0][2] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 4)
+    {
+      if (PositionalMatrix[1][0] == '4') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[1][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 5)
+    {
+      if (PositionalMatrix[1][1] == '5') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[1][1] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 6)
+    {
+      if (PositionalMatrix[1][2] == '6') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[1][2] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 7)
+    {
+      if (PositionalMatrix[2][0] == '7') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[2][0] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 8)
+    {
+      if (PositionalMatrix[2][1] == '8') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[2][1] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+    else if(InputField == 9)
+    {
+      if (PositionalMatrix[2][2] == '9') /*Compairing the matrix positional content with the numeric character value. */
+          PositionalMatrix[2][2] = PlayerChoise; /*If similar the value is replaced with that of 'X' or 'O'. */
+      else{
+        cout << "\n\n\t Matrix field already in use. Try again!!" << endl;
+        InputFields(); //Recursive method to recall the method to input the fields.
+      }
+    }
+
+}
+
+
+
+/*How's the player gonna win? */
+void WinLogic(){
+
+}
+
 
 
 
