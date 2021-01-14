@@ -160,14 +160,54 @@ void InputFields(){
 
 /*How's the player gonna win? */
 void WinLogic(){
-
+  // For Player1 with symbol 'X' to win
+  /*If same ROW*/
+  if(PositionalMatrix[0][0] == 'X' && PositionalMatrix[0][1] == 'X' && PositionalMatrix[0][2] == 'X')
+        return 'X';
+    if(PositionalMatrix[1][0] == 'X' && PositionalMatrix[1][1] == 'X' && PositionalMatrix[1][2] == 'X')
+        return 'X';
+      if(PositionalMatrix[2][0] == 'X' && PositionalMatrix[2][1] == 'X' && PositionalMatrix[2][2] == 'X')
+          return 'X';
+        /*If same COLUMN*/
+        if(PositionalMatrix[0][0] == 'X' && PositionalMatrix[1][0] == 'X' && PositionalMatrix[2][0] == 'X')
+            return 'X';
+          if(PositionalMatrix[0][1] == 'X' && PositionalMatrix[1][1] == 'X' && PositionalMatrix[2][1] == 'X')
+              return 'X';
+            if(PositionalMatrix[0][2] == 'X' && PositionalMatrix[1][2] == 'X' && PositionalMatrix[2][2] == 'X')
+                return 'X';
+              /*If same DIAGONAL*/
+              if(PositionalMatrix[0][0] == 'X' && PositionalMatrix[1][1] == 'X' && PositionalMatrix[2][2] == 'X')
+                  return 'X';
+                if(PositionalMatrix[2][0] == 'X' && PositionalMatrix[1][1] == 'X' && PositionalMatrix[0][2] == 'X')
+                    return 'X';
+ 
+    // For Player2 with symbol 'O' to win
+    /*If same ROW*/
+    if(PositionalMatrix[0][0] == 'O' && PositionalMatrix[0][1] == 'O' && PositionalMatrix[0][2] == 'O')
+        return 'O';
+    if(PositionalMatrix[1][0] == 'O' && PositionalMatrix[1][1] == 'O' && PositionalMatrix[1][2] == 'O')
+        return 'O';
+      if(PositionalMatrix[2][0] == 'O' && PositionalMatrix[2][1] == 'O' && PositionalMatrix[2][2] == 'O')
+          return 'O';
+        /*If same COLUMN*/
+        if(PositionalMatrix[0][0] == 'O' && PositionalMatrix[1][0] == 'O' && PositionalMatrix[2][0] == 'O')
+            return 'O';
+          if(PositionalMatrix[0][1] == 'O' && PositionalMatrix[1][1] == 'O' && PositionalMatrix[2][1] == 'O')
+              return 'O';
+            if(PositionalMatrix[0][2] == 'O' && PositionalMatrix[1][2] == 'O' && PositionalMatrix[2][2] == 'O')
+                return 'O';
+              /*If same DIAGONAL*/
+              if(PositionalMatrix[0][0] == 'O' && PositionalMatrix[1][1] == 'O' && PositionalMatrix[2][2] == 'O')
+                  return 'O';
+                if(PositionalMatrix[2][0] == 'O' && PositionalMatrix[1][1] == 'O' && PositionalMatrix[0][2] == 'O')
+                    return 'O';
 }
 
 
 
 
 int main(void) {
-  Console();
+  
 return 0;
   
 }
