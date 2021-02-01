@@ -15,5 +15,5 @@ Where Should I Go ?
    - Enter the Numeric Place Values ranging between 1-9 for placing the respective symbol in the Input Field.
    
  # Download the .exe (for both 32/64bits)
-   -Choose the medium of download(developer's recommended .zip).
+   -Choose the medium of download(.zip recommended).
          - [Click Here to Download](https://github.com/Sudeep25022000/Ultimate-Tic-Tac-Toe/files/5816636/TicTacToe_v1.zip)
